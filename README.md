@@ -777,14 +777,9 @@ $$
 
 Here, $B$ denotes the backshift operator, and the number of terms in the autoregressive $(p^*, sP^*)$ and moving average $(q^*, sQ^*)$ polynomials determines the order of these components. This also establishes how far back or ahead the model looks to explain the data.
 
-The seasonal AR and MA terms are the $sP^*$-th and $sQ^*$-th lag of the series, respectively:
+The seasonal AR and MA terms are the ![equation](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/svm%2Ftime15_1.png?alt=media&token=d090d837-36dc-4950-ba25-f33c2c84de8f)-th and ![equation](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/svm%2Ftime15_2.png?alt=media&token=f602439a-e38f-4b90-9b2b-453079de0fdd)-th lag of the series, respectively:
 
-$$
-$$
-\phi^*_B (B^s) y_t & =  \sum_{j=1}^{sP^*} \phi^*_j y_{t - s j}  \\
-\theta^*_B (B^s) a_t & =  \sum_{j=1}^{sQ^*} \theta^*_j a_{t - s j}
-$$
-$$
+![equation](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/svm%2Ftime15_3.png?alt=media&token=4b53ece5-bc81-4f6d-b239-a54b184226c2)
 
 ### Code Example:  Implementing Seasonal Differencing
 
